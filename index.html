@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><title>ZODIAC SIGNS!</title></head>
+<style>
+    html{
+        background-image: url(“”);
+		  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+</style>
+    <script type="text/javascript">
+    function bdaysign(){
+    var birthmonth =     inputs.bmonth.value;    
+     var birthday =     inputs.bday.value;   
+    if (birthmonth == "January" && birthday >= 20 || birthmonth =="February" && birthday <=18)  
+       {        document.getElementById("result").innerHTML = " Your Zodiac Sign is Aquarius";     }  
+    else if (birthmonth == "February" && birthday >= 19 || birthmonth == "March" && birthday <=20) 
+           {         document.getElementById("result").innerHTML = " Your Zodiac Sign is Pisces";     }    
+    else if (birthmonth == "March" && birthday >= 21 || birthmonth == "April" && birthday <=19)    
+    {     document.getElementById("result").innerHTML = " Your Zodiac Sign is Aries";     } 
+        else if (birthmonth == "April" && birthday >= 20 || birthmonth == "May" && birthday <=20)     
+    {     document.getElementById("result").innerHTML = " Your Zodiac Sign is Taurus";     }     
+    else if (birthmonth == "May" && birthday >= 21 || birthmonth == "June" && birthday <=20)    
+     {   document.getElementById("result").innerHTML = " Your Zodiac Sign is Gemini";     }    
+     else if (birthmonth == "June" && birthday >= 21 || birthmonth == "July" && birthday <=22)     
+      {  document.getElementById("result").innerHTML = " Your Zodiac Sign is Cancer";     }     
+     else if (birthmonth == "July" && birthday >= 23 || birthmonth == "August" && birthday <=22)     
+      {  document.getElementById("result").innerHTML = " Your Zodiac Sign is Leo";     }    
+    else   if (birthmonth == "August" && birthday >= 23 || birthmonth == "September" && birthday <=22)     
+       { document.getElementById("result").innerHTML = " Your Zodiac Sign is Virgo";     }     
+     else  if (birthmonth == "September" && birthday >= 23 || birthmonth == "October" && birthday <=22)     
+       {  document.getElementById("result").innerHTML = " Your Zodiac Sign is Libra";     }     
+      else if (birthmonth == "October" && birthday >= 23 || birthmonth == "November" && birthday <=21)    
+      { document.getElementById("result").innerHTML = " Your Zodiac Sign is Scorpio";     }     
+      else  if (birthmonth == "November" && birthday >= 22 || birthmonth == "December" && birthday <=21)     
+        {  document.getElementById("result").innerHTML = " Your Zodiac Sign is Sagittarius";     }     
+      else  if (birthmonth == "December" && birthday >= 22 || birthmonth == "January" && birthday <=19)     
+        {   document.getElementById("result").innerHTML = " Your Zodiac Sign is Capricorn";     }     
+    else   {         alert("enter an accurate date");
+       }}
+    </script>
+    </head>
+    <body>
+        <h1 style="margin-top: 50px;" align="center">Lets Identify Your Zodiac Sign!!! </h1>
+        <form id="inputs" align="center" style="margin-top:25px;">
+        <input type="text" placeholder="Birth Month" id="bmonth" name="month"/>
+        <input type="number" id="bday" name="date"/>
+        <input type="button" value="Submit" onclick="bdaysign()"/>
+        <h2 id="result"></h2>
+        </form>
+    </body>
+</html>
